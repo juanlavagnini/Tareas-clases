@@ -9,8 +9,10 @@ export const MyButton = (props: MyButtonProps) => {
   const [ispressed, setPressed] = React.useState(false);
   return <Pressable 
   style={[buttonstyles.genericbutton, ispressed ? buttonstyles.pressedbutton : buttonstyles.button]}
-  onPressIn={() => setPressed(true)}
-  onPressOut={() => setPressed(false)}
+  onPress={() => setPressed(!ispressed)} //Me permite cambiar el estado entre: true y false. Es persistente
+  
+  //onPressIn={() => setPressed(true)} //Me permite cambiar el estado a true solo mientras se mantiene presionado el boton
+  //onPressOut={() => setPressed(false)}
   >
     <Text style={ispressed ? buttonstyles.pressedtext : buttonstyles.text}>{props.text}</Text></Pressable>;
 }
