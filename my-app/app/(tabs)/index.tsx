@@ -1,5 +1,6 @@
+import { MyButton } from "@/components/mybutton";
 import { Text, View } from "react-native";
-import {MyButton} from "../components/mybutton";
+ // Update the path to the correct case-sensitive file name
 
 export default function Index() {
   return (
