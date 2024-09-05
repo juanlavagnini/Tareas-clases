@@ -25,6 +25,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="perfil"
         options={{
+          headerShown: false,
           title: 'Profile',
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon name={focused ? 'body' : 'body-outline'} color={color} />

@@ -9,7 +9,7 @@ const perfil = () => {
   return (
     <View style={styles.container}>
         <Text>Bienvenido {user}</Text>
-        <HrefButton text="Update" route="/updatePerfil" />
+        <HrefButton text="Update" route="/(tabs)/perfil/updatePerfil" />
     </View>
   )
 }
