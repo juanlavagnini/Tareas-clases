@@ -22,7 +22,7 @@ const updatePerfil = () => {
       <Link
         style={styles.botonGuardar}
         href={{
-          pathname: '/(tabs)/perfil/perfil',
+          pathname: '/perfil/perfil',
           params: { user: perfilName  },
         }}>
         Guardar
